@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.5
+Encoding=UTF-8
+Type=Application
+Name=Skin Editor
+Exec=/opt/CCL\\\sSkin\\\sEditor/CCL\\\sSkin\\\sEditor %u
+Icon=skineditor
+Categories=Utility;Development

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassFactory>
+	<Version
+		name="Skin Editing Tasks"
+		version="1.0"
+		vendor="CCL Software Licensing GmbH"
+		copyright="Copyright (c) 2023 CCL Software Licensing GmbH"
+		url="https://ccl.dev"/>
+
+	<ScriptClass
+		classID="{C8573A91-6B9B-4F03-9DB2-C6E6959F57B5}"
+		category="EditTask"
+		subCategory="SkinEdit"
+		name="Arrange Horizontally"
+		sourceFile="LayoutTasks.js"
+		functionName="createLayoutHTask">
+		<Attribute id="menuGroup" value="SkinLayout"/>
+	</ScriptClass>
+
+	<ScriptClass
+		classID="{BA0A7D37-CAAA-4335-B651-7AAC0C32211A}"
+		category="EditTask"
+		subCategory="SkinEdit"
+		name="Arrange Vertically"
+		sourceFile="LayoutTasks.js"
+		functionName="createLayoutVTask">
+		<Attribute id="menuGroup" value="SkinLayout"/>
+	</ScriptClass>
+
+</ClassFactory>

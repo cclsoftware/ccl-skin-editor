@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Commands>
+
+	<Command category="Skin" name="Add Form">
+		<Key name="F2"/>
+	</Command>
+
+	<Command category="Skin" name="Add Font">
+		<Key name="F3"/>
+	</Command>
+
+	<Command category="Skin" name="Add Image">
+		<Key name="F4"/>
+	</Command>
+
+	<Command category="Skin" name="Add Style">
+		<Key name="F5"/>
+	</Command>
+	
+</Commands>

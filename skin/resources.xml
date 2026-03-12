@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Skin>	
+	<Resources>
+		<IconSet name="AppIcon" url="images/skineditor.iconset" frames="all"/>
+	
+		<!-- Classic Spy Icons -->
+		<!--
+		<Image name="SkinFormItem"					image="SpyIcons/Form"/>
+		<Image name="SkinViewItem:View"				image="SpyIcons/View"/>
+		<Image name="SkinViewItem:ContainerView"	image="SpyIcons/View"/>
+		<Image name="SkinViewItem:Delegate"			image="SpyIcons/View"/>
+		<Image name="SkinViewItem:Label"			image="SpyIcons/Label"/>
+		<Image name="SkinViewItem:MultiLineLabel"	image="SpyIcons/Label"/>
+		<Image name="SkinViewItem:ImageView"		image="SpyIcons/ImageView"/>
+		<Image name="SkinViewItem:VariantView"		image="SpyIcons/VariantView"/>
+		<Image name="SkinViewItem:AlignView"		image="SpyIcons/LayoutView"/>		
+		<Image name="SkinViewItem:Button"			image="SpyIcons/Control"/>
+		<Image name="SkinViewItem:Toggle"			image="SpyIcons/Control"/>
+		<Image name="SkinViewItem:RadioButton"		image="SpyIcons/Control"/>
+		<Image name="SkinViewItem:ValueBar"			image="SpyIcons/Control"/>
+		<Image name="SkinViewItem:Slider"			image="SpyIcons/Control"/>		
+		<Image name="SkinViewItem:TextBox"			image="SpyIcons/Label"/>
+		<Image name="SkinViewItem:EditBox"			image="SpyIcons/Label"/>
+		<Image name="SkinViewItem:SelectBox"		image="SpyIcons/Control"/>
+		-->
+
+		<!-- Visual Studio Image Library -->
+		<Image name="SkinFontItem"					image="VSImageLibrary/Font"/>
+		<Image name="SkinStyleItem"					image="VSImageLibrary/StyleBlock"/>
+		<Image name="SkinImageItem"					image="VSImageLibrary/Image"/>
+		<Image name="SkinFormItem"					image="VSImageLibrary/WindowsForm"/>
+		<Image name="SkinViewItem:View"				image="VSImageLibrary/Box"/>
+		<Image name="SkinViewItem:ContainerView"	image="VSImageLibrary/Box"/>
+		<Image name="SkinViewItem:Delegate"			image="VSImageLibrary/Box"/>
+		<Image name="SkinViewItem:Label"			image="VSImageLibrary/Label"/>
+		<Image name="SkinViewItem:MultiLineLabel"	image="VSImageLibrary/Label"/>
+		<Image name="SkinViewItem:ImageView"		image="VSImageLibrary/ImageButton"/>
+		<Image name="SkinViewItem:VariantView"		image="VSImageLibrary/Box"/>
+		<Image name="SkinViewItem:AlignView"		image="VSImageLibrary/Box"/>		
+		<Image name="SkinViewItem:Button"			image="VSImageLibrary/Button"/>
+		<Image name="SkinViewItem:Toggle"			image="VSImageLibrary/Toggle"/>
+		<Image name="SkinViewItem:RadioButton"		image="VSImageLibrary/RadioButton"/>
+		<Image name="SkinViewItem:ValueBar"			image="VSImageLibrary/GaugeLinear"/>
+		<Image name="SkinViewItem:Slider"			image="VSImageLibrary/Slider"/>		
+		<Image name="SkinViewItem:TextBox"			image="VSImageLibrary/TextBox"/>
+		<Image name="SkinViewItem:EditBox"			image="VSImageLibrary/TextBox"/>
+		<Image name="SkinViewItem:SelectBox"		image="VSImageLibrary/ComboBox"/>
+		<Image name="SkinViewItem:ListView"			image="VSImageLibrary/ListView"/>
+
+		<Image name="SkinViewItemFlags.Visibility"	image="VSImageLibrary/Visible"/>
+		<Image name="SkinViewItemFlags.Enablement"	image="VSImageLibrary/Pen4"/>
+		<Image name="SkinViewItemFlags.ChildSelect"	image="VSImageLibrary/RadioButton"/>
+
+		<Image name="SkinEnumeration"				image="VSImageLibrary/Enumerator"/>
+				
+	</Resources>
+</Skin>
+

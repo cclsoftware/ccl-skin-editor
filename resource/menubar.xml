@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MenuBar>
+	
+    <!-- ********************************************************************************** -->
+    <!-- *** Application menu (Mac) ************************************************** -->
+    <!-- ********************************************************************************** -->
+
+	<?platform mac?>
+    <Menu name="Application">
+        <MenuItem category="Help" name="About" title="About $APPNAME"/>
+        <MenuSeparator/>
+		<MenuPlaceholder name="Appearance"/>
+        <MenuSeparator/>
+		<MenuItem category="File" name="Quit" title="Quit $APPNAME"/>
+    </Menu>
+	<?platform?>
+
+    <!-- ********************************************************************************** -->
+    <!-- *** File Menu ******************************************************************** -->
+    <!-- ********************************************************************************** -->
+
+    <Menu name="File">
+        <MenuItem name="New" follow="1"/>
+        <MenuItem name="Open" follow="1"/>
+        <MenuItem name="Close"/>
+
+		<MenuSeparator/>
+
+		<MenuItem name="Save"/>
+		<MenuItem name="Save As" follow="1"/>
+		<MenuItem name="Revert"/>
+
+		<MenuSeparator/>
+
+		<MenuItem name="Export Code" follow="1"/>
+
+		<MenuSeparator/>
+		
+		<MenuItem name="Skin Settings" follow="1"/>
+
+		<MenuSeparator/>
+		<MenuPlaceholder name="Recent Files"/>
+
+		<?not:platform mac?>
+        <MenuSeparator/>
+        <MenuItem name="Quit"/>
+		<?platform?>
+    </Menu>
+	
+    <!-- ********************************************************************************** -->
+    <!-- *** Edit Menu ******************************************************************** -->
+    <!-- ********************************************************************************** -->
+
+    <Menu name="Edit">
+        <MenuItem name="Undo"/>
+        <MenuItem name="Redo"/>
+    </Menu>
+	
+    <!-- ********************************************************************************** -->
+    <!-- *** Skin Menu ******************************************************************** -->
+    <!-- ********************************************************************************** -->
+
+    <Menu name="Skin">
+        <MenuItem name="Add Form" follow="1"/>
+		<MenuSeparator/>
+        <MenuItem name="Add Font" follow="1"/>
+        <MenuItem name="Add Image" follow="1"/>
+        <MenuItem name="Add Style" follow="1"/>
+    </Menu>
+
+	<!-- ********************************************************************************** -->
+	<!-- *** Application Menu (Windows, Linux) ******************************************** -->
+	<!-- ********************************************************************************** -->
+	
+	<?not:platform mac?>
+	<Menu name="Application" title="$APPNAME">
+		<MenuPlaceholder name="Appearance"/>
+	</Menu>
+	<?platform?>
+
+    <!-- ********************************************************************************** -->
+    <!-- *** Help Menu ******************************************************************** -->
+    <!-- ********************************************************************************** -->
+
+	<?not:platform mac?>
+    <Menu name="Help">
+        <MenuItem name="About" title="About $APPNAME" follow="1"/>
+    </Menu>
+	<?platform?>
+	
+</MenuBar>

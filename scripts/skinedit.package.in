@@ -1,0 +1,8 @@
+print: Compiling Skin Edit Tasks...
+
+; package scripts
+setInputDir: ./skinedit
+setOutputDir: ../assets/scripts
+addFilter: <.svn>
+addFilter: *.ts
+packageFolder-r: skinedit.package
