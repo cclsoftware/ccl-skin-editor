@@ -18,6 +18,40 @@
 
 	</Styles>
 	
+	<Shapes>
+		<Shape name="FormPlusShape">
+			<Graphic image="Mdi/ApplicationOutline" source="0,0,24,24" destination="0,0,24,24"/>
+			<Graphic image="Mdi/Plus" source="0,0,24,24" destination="6,6,24,24"/>
+		</Shape>
+		<Shape name="FontPlusShape">
+			<Graphic image="Mdi/FormatFont" source="0,0,24,24" destination="0,0,24,24"/>
+			<Graphic image="Mdi/Plus" source="0,0,24,24" destination="12,0,24,12"/>
+		</Shape>
+		<Shape name="ImagePlusShape">
+			<Graphic image="Mdi/ImageOutline" source="0,0,24,24" destination="0,0,24,24"/>
+			<Graphic image="Mdi/Plus" source="0,0,24,24" destination="6,4,18,16"/>
+		</Shape>
+		<Shape name="StylePlusShape">
+			<Graphic image="Mdi/PaletteOutline" source="0,0,24,24" destination="0,0,24,24"/>
+			<Graphic image="Mdi/Plus" source="0,0,24,24" destination="12,12,24,24"/>
+		</Shape>
+	</Shapes>
+	
+	<Resources>
+		<ShapeImage name="AddForm" url="FormPlusShape">
+			<ShapeColorMapping name="black" color="@Main.LabelColor"/>
+		</ShapeImage>
+		<ShapeImage name="AddFont" url="FontPlusShape">
+			<ShapeColorMapping name="black" color="@Main.LabelColor"/>
+		</ShapeImage>
+		<ShapeImage name="AddImage" url="ImagePlusShape">
+			<ShapeColorMapping name="black" color="@Main.LabelColor"/>
+		</ShapeImage>
+		<ShapeImage name="AddStyle" url="StylePlusShape">
+			<ShapeColorMapping name="black" color="@Main.LabelColor"/>
+		</ShapeImage>
+	</Resources>
+	
 	<Forms>
 	
 		<!-- ******************************************************************************************** -->
@@ -60,7 +94,7 @@
 							<View name="SectionHeader" width="300" attach="left right top"/>
 						</define>
 						<Horizontal margin="0">
-							<Button icon="VSImageLibrary/AddForm" width="24" height="24" command.category="Skin" command.name="Add Form" tooltip="@cmd.title[]"/>
+							<Button icon="AddForm" width="24" height="24" command.category="Skin" command.name="Add Form" tooltip="@cmd.title[]"/>
 						</Horizontal>
 						<TreeView name="formTreeModel" width="300" height="600" options="noroot selection header" scrolloptions="border autohideboth" attach="all"/>
 					</Vertical>
@@ -107,9 +141,9 @@
 							<ListView title="Controls" name="classListModel" width="300" height="300" options="selection exclusive" viewtype="icons" scrolloptions="border autohideboth" attach="all"/>
 							<Vertical title="Assets" margin="0" spacing="2" attach="all">
 								<Horizontal margin="2" spacing="2">
-									<Button icon="VSImageLibrary/AddFont" width="24" height="24" command.category="Skin" command.name="Add Font" tooltip="@cmd.title[]"/>
-									<Button icon="VSImageLibrary/AddImage" width="24" height="24" command.category="Skin" command.name="Add Image" tooltip="@cmd.title[]"/>
-									<Button icon="VSImageLibrary/AddStyleRule" width="24" height="24" command.category="Skin" command.name="Add Style" tooltip="@cmd.title[]"/>									
+									<Button icon="AddFont" width="24" height="24" command.category="Skin" command.name="Add Font" tooltip="@cmd.title[]"/>
+									<Button icon="AddImage" width="24" height="24" command.category="Skin" command.name="Add Image" tooltip="@cmd.title[]"/>
+									<Button icon="AddStyle" width="24" height="24" command.category="Skin" command.name="Add Style" tooltip="@cmd.title[]"/>									
 								</Horizontal>
 								<TreeView  name="assetTreeModel" width="300" height="280" options="noroot selection" scrolloptions="border autohideboth" attach="all"/>
 							</Vertical>
@@ -139,8 +173,8 @@
 			<Vertical margin="0" spacing="0" attach="all">
 				<ListView name="listModel" width="300" height="276" options="header selection" scrolloptions="border autohideboth" attach="all"/>
 				<Horizontal margin="2" spacing="2" attach="left right bottom">
-					<Button name="addAttribute" icon="VSImageLibrary/AddThin" width="20" height="20" tooltip="Add Attribute..."/>
-					<Button name="removeAttribute" icon="VSImageLibrary/RemoveThin" width="20" height="20" tooltip="Remove Attribute"/>
+					<Button name="addAttribute" icon="Mdi/Plus" width="20" height="20" tooltip="Add Attribute..."/>
+					<Button name="removeAttribute" icon="Mdi/Minus" width="20" height="20" tooltip="Remove Attribute"/>
 				</Horizontal>
 			</Vertical>
 		</Form>
@@ -174,9 +208,9 @@
 						</Table>
 						<ListView name="defaultsList" width="500" height="200" options="selection" scrolloptions="border autohidev" attach="all"/>
 						<Horizontal margin="2" spacing="2">
-							<Button name="addDefault" icon="VSImageLibrary/AddThin" width="20" height="20" tooltip="Add Default..."/>
-							<Button name="removeDefault" icon="VSImageLibrary/RemoveThin" width="20" height="20" tooltip="Remove Default"/>
-							<Button name="editDefault" icon="VSImageLibrary/Edit" width="20" height="20" tooltip="Edit Default..."/>
+							<Button name="addDefault" icon="Mdi/Plus" width="20" height="20" tooltip="Add Default..."/>
+							<Button name="removeDefault" icon="Mdi/Minus" width="20" height="20" tooltip="Remove Default"/>
+							<Button name="editDefault" icon="Mdi/PencilOutline" width="20" height="20" tooltip="Edit Default..."/>
 						</Horizontal>
 					</Vertical>
 				</DialogGroup>
@@ -203,17 +237,11 @@
 						<Link title="For more information, please visit ccl.dev." style="AboutLabel"/>
 					</Anchor>
 					<Space/>
-					<Space/>
 					<Anchor url="local://$deployment/license/">				
 						<Link title="See license folder for 3rd party software used in this product" style="AboutLabel"/>
 					</Anchor>
-					<!--
 					<Space/>
-					<Space/>
-					<Space/>
-					<Space/>
-					<DialogButton result="close" attach="hcenter"/>
-					-->
+					<Label title="Made with &hearts; in Hamburg, Germany" style="AboutLabel"/>
 				</Vertical>
 			</Horizontal>
 		</Form>

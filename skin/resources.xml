@@ -24,34 +24,37 @@
 		<Image name="SkinViewItem:SelectBox"		image="SpyIcons/Control"/>
 		-->
 
-		<!-- Visual Studio Image Library -->
-		<Image name="SkinFontItem"					image="VSImageLibrary/Font"/>
-		<Image name="SkinStyleItem"					image="VSImageLibrary/StyleBlock"/>
-		<Image name="SkinImageItem"					image="VSImageLibrary/Image"/>
-		<Image name="SkinFormItem"					image="VSImageLibrary/WindowsForm"/>
-		<Image name="SkinViewItem:View"				image="VSImageLibrary/Box"/>
-		<Image name="SkinViewItem:ContainerView"	image="VSImageLibrary/Box"/>
-		<Image name="SkinViewItem:Delegate"			image="VSImageLibrary/Box"/>
-		<Image name="SkinViewItem:Label"			image="VSImageLibrary/Label"/>
-		<Image name="SkinViewItem:MultiLineLabel"	image="VSImageLibrary/Label"/>
-		<Image name="SkinViewItem:ImageView"		image="VSImageLibrary/ImageButton"/>
-		<Image name="SkinViewItem:VariantView"		image="VSImageLibrary/Box"/>
-		<Image name="SkinViewItem:AlignView"		image="VSImageLibrary/Box"/>		
-		<Image name="SkinViewItem:Button"			image="VSImageLibrary/Button"/>
-		<Image name="SkinViewItem:Toggle"			image="VSImageLibrary/Toggle"/>
-		<Image name="SkinViewItem:RadioButton"		image="VSImageLibrary/RadioButton"/>
-		<Image name="SkinViewItem:ValueBar"			image="VSImageLibrary/GaugeLinear"/>
-		<Image name="SkinViewItem:Slider"			image="VSImageLibrary/Slider"/>		
-		<Image name="SkinViewItem:TextBox"			image="VSImageLibrary/TextBox"/>
-		<Image name="SkinViewItem:EditBox"			image="VSImageLibrary/TextBox"/>
-		<Image name="SkinViewItem:SelectBox"		image="VSImageLibrary/ComboBox"/>
-		<Image name="SkinViewItem:ListView"			image="VSImageLibrary/ListView"/>
+		<!-- Pictogrammers Material Design Icons -->
+		
+		<Image name="SkinFontItem"					image="Mdi/FormatFont"/>
+		<Image name="SkinStyleItem"					image="Mdi/PaletteOutline"/>
+		<Image name="SkinImageItem"					image="Mdi/FileImageOutline"/>
+		<Image name="SkinFormItem"					image="Mdi/ApplicationOutline"/>
+		<Image name="SkinViewItem:View"				image="Mdi/CheckboxBlankOutline"/>
+		<Image name="SkinViewItem:ContainerView"	image="Mdi/CheckboxBlankOutline"/>
+		<Image name="SkinViewItem:Delegate"			image="Mdi/CheckboxBlankOutline"/>
+		<Image name="SkinViewItem:Label"			image="Mdi/FormatTextVariant"/>
+		<Image name="SkinViewItem:MultiLineLabel"	image="Mdi/FormatTextVariant"/>
+		<Image name="SkinViewItem:ImageView"		image="Mdi/ImageOutline"/>
+		<Image name="SkinViewItem:VariantView"		image="Mdi/CheckboxIntermediateVariant"/>
+		<Image name="SkinViewItem:AlignView"		image="Mdi/PageLayoutBody"/>		
+		<Image name="SkinViewItem:Button"			image="Mdi/ButtonCursor"/>
+		<Image name="SkinViewItem:Toggle"			image="Mdi/ToggleSwitchOutline"/>
+		<Image name="SkinViewItem:RadioButton"		image="Mdi/RadioboxMarked"/>
+		<Image name="SkinViewItem:ValueBar"			image="Mdi/GradientHorizontal"/>
+		<Image name="SkinViewItem:Slider"			image="Mdi/Tune"/>		
+		<Image name="SkinViewItem:TextBox"			image="Mdi/FormTextbox"/>
+		<Image name="SkinViewItem:EditBox"			image="Mdi/FormTextbox"/>
+		<Image name="SkinViewItem:SelectBox"		image="Mdi/FormDropdown"/>
+		<Image name="SkinViewItem:ListView"			image="Mdi/FormatListBulleted"/>
 
-		<Image name="SkinViewItemFlags.Visibility"	image="VSImageLibrary/Visible"/>
-		<Image name="SkinViewItemFlags.Enablement"	image="VSImageLibrary/Pen4"/>
-		<Image name="SkinViewItemFlags.ChildSelect"	image="VSImageLibrary/RadioButton"/>
+		<Image name="SkinViewItemFlags.Visibility"	image="Mdi/EyeOutline"/>
+		<Image name="SkinViewItemFlags.Enablement"	image="Mdi/PencilOutline"/>
+		<Image name="SkinViewItemFlags.ChildSelect"	image="Mdi/RadioboxMarked"/>
 
-		<Image name="SkinEnumeration"				image="VSImageLibrary/Enumerator"/>
+		<!-- Codicons -->
+
+		<Image name="SkinEnumeration"				image="Codicons/Enum"/>
 				
 	</Resources>
 </Skin>
