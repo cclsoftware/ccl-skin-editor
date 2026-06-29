@@ -20,20 +20,20 @@
 	
 	<Shapes>
 		<Shape name="FormPlusShape">
-			<Graphic image="Mdi/ApplicationOutline" source="0,0,24,24" destination="0,0,24,24"/>
-			<Graphic image="Mdi/Plus" source="0,0,24,24" destination="6,6,24,24"/>
+			<Graphic image="Mdi/ApplicationOutline" size="0,0,24,24"/>
+			<Graphic image="Mdi/Plus" size="6,6,24,24"/>
 		</Shape>
 		<Shape name="FontPlusShape">
-			<Graphic image="Mdi/FormatFont" source="0,0,24,24" destination="0,0,24,24"/>
-			<Graphic image="Mdi/Plus" source="0,0,24,24" destination="12,0,24,12"/>
+			<Graphic image="Mdi/FormatFont" size="0,0,24,24"/>
+			<Graphic image="Mdi/Plus" size="12,0,24,12"/>
 		</Shape>
 		<Shape name="ImagePlusShape">
-			<Graphic image="Mdi/ImageOutline" source="0,0,24,24" destination="0,0,24,24"/>
-			<Graphic image="Mdi/Plus" source="0,0,24,24" destination="6,4,18,16"/>
+			<Graphic image="Mdi/ImageOutline" size="0,0,24,24"/>
+			<Graphic image="Mdi/Plus" size="6,4,18,16"/>
 		</Shape>
 		<Shape name="StylePlusShape">
-			<Graphic image="Mdi/PaletteOutline" source="0,0,24,24" destination="0,0,24,24"/>
-			<Graphic image="Mdi/Plus" source="0,0,24,24" destination="12,12,24,24"/>
+			<Graphic image="Mdi/PaletteOutline" size="0,0,24,24"/>
+			<Graphic image="Mdi/Plus" size="12,12,24,24"/>
 		</Shape>
 	</Shapes>
 	
@@ -249,4 +249,3 @@
 		
 	</Forms>
 </Skin>
-
