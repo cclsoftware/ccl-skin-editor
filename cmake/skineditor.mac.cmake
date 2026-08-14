@@ -24,6 +24,10 @@ set (skineditor_FRAMEWORKS
 	cclgui
 )
 
+set (skineditor_PLUGINS
+	jsengine
+)
+
 set_target_properties (skineditor PROPERTIES
 	RESOURCE "${skineditor_bundle_resources}"
 	MACOSX_BUNDLE_INFO_PLIST "${CMAKE_CURRENT_LIST_DIR}/../packaging/mac/Info.plist"
