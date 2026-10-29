@@ -29,6 +29,7 @@
 #include "ccl/base/message.h"
 #include "ccl/base/storage/attributes.h"
 
+#include "ccl/public/base/itypelib.h"
 #include "ccl/public/text/translation.h"
 #include "ccl/public/gui/graphics/igraphics.h"
 #include "ccl/public/gui/framework/dialogbox.h"
@@ -320,8 +321,9 @@ void SkinPropertyListModel::rebuild ()
 		String itemName (skinItem->getElement ().getName ());
 
 		String className;
-		if(auto elementClass = skinItem->getElement ().getElementClass ())
-			className = String (elementClass->getClassName ());
+		if(UnknownPtr<ITypeLibReference> reference = &skinItem->getElement ())
+			if(const ITypeInfo* typeInfo = reference->getReferencedType ())
+				className = String (typeInfo->getClassName ());
 
 		addItem (XSTR (SourceFile), sourceFile, true);
 		addItem (XSTR (ItemName), itemName, true);

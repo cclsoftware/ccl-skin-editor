@@ -531,12 +531,11 @@ String SkinViewItem::getDisplayName () const
 
 MutableCString SkinViewItem::getClassName () const
 {
-	MutableCString className;
-	if(auto elementClass = getElement ().getElementClass ())
-		className = elementClass->getClassName ();
-	else
-		className = getElement ().getName ();
-	return className;
+	if(UnknownPtr<ITypeLibReference> reference = &getElement ())
+		if(const ITypeInfo* typeInfo = reference->getReferencedType ())
+			return typeInfo->getClassName ();
+
+	return getElement ().getName ();
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
